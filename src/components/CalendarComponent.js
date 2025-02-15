@@ -25,6 +25,28 @@ export default function CalendarComponent() {
         startAccessor="start"
         endAccessor="end"
         style={{ height: 500 }}
+        popup={true} // Full screen
+        eventPropGetter={(event) => {
+          const backgroundColor =
+            event.category === "Exam" ? "#ff4d4d" : "#007bff";
+          return {
+            style: {
+              backgroundColor,
+              color: "white",
+              padding: "5px",
+              borderRadius: "5px",
+            },
+          };
+        }}
+        components={{
+          event: ({ event }) => (
+            <div>
+              <strong>{event.title}</strong> <br />
+              {moment(event.start).format("hh:mm A")} -{" "}
+              {moment(event.end).format("hh:mm A")}
+            </div>
+          ),
+        }}
       />
     </div>
   );
