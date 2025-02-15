@@ -1,0 +1,76 @@
+/* 🌟 Custom Calendar Styling 🌟 */
+
+.calendar-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 📅 Calendar Header */
+.rbc-toolbar {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* 📆 Events */
+.rbc-event {
+  background-color: #28a745 !important;
+  border: none !important;
+  border-radius: 5px !important;
+}
+
+/* 📌 Event Titles */
+.rbc-event-content {
+  color: white;
+  font-weight: bold;
+}
+
+/* 🔄 Navigation Buttons */
+.rbc-btn-group button {
+  background-color: #007bff !important;
+  color: white !important;
+  border-radius: 5px !important;
+  transition: 0.3s;
+}
+
+.rbc-btn-group button:hover {
+  background-color: #0056b3 !important;
+}
+
+/* 📏 Calendar Grid */
+.rbc-month-view {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 🕘 Time Slot Borders */
+.rbc-time-slot {
+  border-top: 1px solid #ddd;
+}
+
+/* 📅 Selected Day */
+.rbc-today {
+  background: rgba(0, 123, 255, 0.1) !important;
+}
+
+/* 📆 Weekdays */
+.rbc-header {
+  background: #f8f9fa;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #007bff;
+}
+
+/* 🎯 Responsive */
+@media (max-width: 768px) {
+  .calendar-container {
+    width: 90%;
+    padding: 10px;
+  }
+}

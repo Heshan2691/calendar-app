@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.mini-calendar {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.react-calendar {
+  border: none;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.react-calendar__tile {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.react-calendar__tile:hover {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__tile--active {
+  background-color: #3498db !important;
+  color: white;
+}
+
+.highlight-today {
+  background-color: #e74c3c !important;
+  color: white;
+  border-radius: 50%;
+}
+
+.upcoming-events {
+  list-style: none;
+  padding: 0;
+}
+
+.event-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
